@@ -76,16 +76,7 @@ spec:
         value: reserved
     distributor:
       nodeSelector:
-        node-role.kubernetes.io/infra: ""
-      tolerations:
-      - effect: NoSchedule
-        key: node-role.kubernetes.io/infra
-        value: reserved
-      - effect: NoExecute
-        key: node-role.kubernetes.io/infra
-        value: reserved
-      nodeSelector:
-        node-role.kubernetes.io/infra: ""
+        node-role.kubernetes.io/: ""infra
       tolerations:
       - effect: NoSchedule
         key: node-role.kubernetes.io/infra
